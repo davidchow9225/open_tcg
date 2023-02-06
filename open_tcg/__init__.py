@@ -1,3 +1,3 @@
-from .objects.card import BaseCardClass as Card
+from .objects import Card
 from . import yu_gi_oh
 

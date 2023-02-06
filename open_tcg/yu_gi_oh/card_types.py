@@ -1,6 +1,6 @@
-from trading_card_api.objects.card import BaseCardClass
+from open_tcg.objects.card import Card
 
-class MonsterCard(BaseCardClass):
+class MonsterCard(Card):
     def __init__(self, **kwargs):
         # Internal Variable Declarations
         #* Super-Class Variables
@@ -26,7 +26,7 @@ class MonsterCard(BaseCardClass):
         return f"MonsterCard({self.name}, {self.image}, {self.type}, {self.level}, {self.attack}, {self.defense}, {self.effect})"
     
 
-class SpellCard(BaseCardClass):
+class SpellCard(Card):
     def __init__(self, **kwargs):
         # Internal Variable Declarations
         #* Super-Class Variables
@@ -42,7 +42,7 @@ class SpellCard(BaseCardClass):
     def __str__(self):
         return f"SpellCard({self.name}, {self.image}, {self.type}, {self.effect})"
 
-class TrapCard(BaseCardClass):
+class TrapCard(Card):
     def __init__(self, **kwargs):
         # Internal Variable Declarations
         #* Super-Class Variables

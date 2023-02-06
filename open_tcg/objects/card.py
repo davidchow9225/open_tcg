@@ -2,7 +2,7 @@
 """
 
 
-class BaseCardClass:
+class Card:
     def __init__(self, _name, _image_path):
         self.name = _name
         self.image = _image_path
